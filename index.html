@@ -7,60 +7,112 @@
   <meta name="keywords" content="balé clássico, professor de balé, balé para homens, São Paulo">
   <meta name="author" content="Paulo Vinicius Pinheiro Pedro">
   <title>Paulo Vinicius - Balé Clássico</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100">
-  <header id="three-header" class="h-48 bg-gradient-to-b from-pink-300 to-white">
-    <h1 class="text-3xl font-bold text-pink-600 text-center">Paulo Vinicius - Balé Clássico</h1>
+<body class="bg-gray-100 font-sans">
+  <header id="three-header" class="h-48 md:h-64 bg-gradient-to-b from-pink-300 to-white relative">
+    <h1 class="text-3xl md:text-4xl font-bold text-pink-600 text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-full px-4">Paulo Vinicius - Balé Clássico</h1>
   </header>
 
   <nav class="sticky top-0 bg-white shadow-md p-4 z-50">
-    <div class="flex justify-around flex-wrap text-pink-600 font-bold">
-      <a href="#sobre" class="mx-2 my-1 hover:text-pink-800">Sobre</a>
-      <a href="#competencias" class="mx-2 my-1 hover:text-pink-800">Competências</a>
-      <a href="#aulas" class="mx-2 my-1 hover:text-pink-800">Aulas</a>
-      <a href="#agenda" class="mx-2 my-1 hover:text-pink-800">Agenda</a>
-      <a href="#loja" class="mx-2 my-1 hover:text-pink-800">Loja</a>
-      <a href="#contato" class="mx-2 my-1 hover:text-pink-800">Contato</a>
+    <div class="flex justify-around flex-wrap text-pink-600 font-bold text-sm md:text-base">
+      <a href="#sobre" class="mx-1 md:mx-2 my-1 hover:text-pink-800 transition-colors">Sobre</a>
+      <a href="#competencias" class="mx-1 md:mx-2 my-1 hover:text-pink-800 transition-colors">Competências</a>
+      <a href="#aulas" class="mx-1 md:mx-2 my-1 hover:text-pink-800 transition-colors">Aulas</a>
+      <a href="#agenda" class="mx-1 md:mx-2 my-1 hover:text-pink-800 transition-colors">Agenda</a>
+      <a href="#loja" class="mx-1 md:mx-2 my-1 hover:text-pink-800 transition-colors">Loja</a>
+      <a href="#contato" class="mx-1 md:mx-2 my-1 hover:text-pink-800 transition-colors">Contato</a>
     </div>
   </nav>
-
+  <section id="aulas-intro" class="my-8 md:my-12">
+      <h2 class="text-2xl md:text-3xl font-bold text-pink-600 mb-6 text-center">Aulas Disponíveis</h2>
+      <div class="swiper-container swiper-aulas">  <div class="swiper-pagination"></div>
+      </div>
+  </section>
+  
+  <section id="loja-intro" class="my-8 md:my-12">
+      <h2 class="text-2xl md:text-3xl font-bold text-pink-600 mb-6 text-center">Loja Virtual</h2>
+      <div class="swiper-container swiper-loja">   <div class="swiper-pagination"></div>
+      </div>
+  </section>
   <main class="max-w-4xl mx-auto p-4">
-    <section id="sobre" class="text-center my-8">
-      <h2 class="text-2xl font-bold text-pink-600 mb-4">Sobre</h2>
-      <img src="https://irisativalinapenteado.com/wp-content/uploads/2017/06/Mestre-Paulo-Vinicius.png" alt="Paulo Vinicius" class="w-48 h-48 mx-auto rounded-lg mb-4">
-      <p class="text-gray-700">Paulo Vinicius é um professor de balé clássico com 10 anos de experiência, especializado em aulas para homens. Formado pela Escola de Dança Maria Olenewa, promove técnica e inclusão.</p>
+    <section id="sobre" class="my-8 md:my-12">
+      <h2 class="text-2xl md:text-3xl font-bold text-pink-600 mb-6 text-center">Sobre Paulo Vinicius</h2>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img src="https://irisativalinapenteado.com/wp-content/uploads/2017/06/Mestre-Paulo-Vinicius.png" alt="Paulo Vinicius" class="w-48 h-48 md:w-64 md:h-64 rounded-lg shadow-lg object-cover">
+        <div class="text-gray-700 space-y-4">
+          <p>Paulo Vinicius é um renomado professor de balé clássico com mais de 10 anos de experiência, especializado no ensino para bailarinos masculinos. Formado pela prestigiada Escola de Dança Maria Olenewa, vinculada ao Theatro Municipal do Rio de Janeiro.</p>
+          <p>Com uma abordagem que combina técnica refinada e inclusão, Paulo já ministrou cursos em diversas escolas de dança em São Paulo, incluindo a renomada Escola de Dança Ivalin Penteado, onde foi destaque em cursos de férias.</p>
+          <p>Sua metodologia única, baseada no método Vaganova mas adaptada para as necessidades específicas dos bailarinos masculinos, tem ajudado muitos alunos a desenvolverem força, flexibilidade e expressão artística.</p>
+          <div class="flex space-x-4 justify-center md:justify-start">
+            <a href="https://irisativalinapenteado.com/2017/06/19/curso-de-ferias-2017-com-paulo-vinicius/" target="_blank" class="text-pink-600 hover:text-pink-800 flex items-center">
+              <i class="fas fa-external-link-alt mr-2"></i> Matéria completa
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="competencias" class="text-center my-8">
-      <h2 class="text-2xl font-bold text-pink-600 mb-4">Competências</h2>
-      <ul class="list-none p-0">
-        <li class="my-2">Ensino de balé (método Vaganova)</li>
-        <li class="my-2">Aulas para homens iniciantes</li>
-        <li class="my-2">Coreografias originais</li>
-        <li class="my-2">Biomecânica e prevenção de lesões</li>
-      </ul>
+    <section id="competencias" class="my-8 md:my-12">
+      <h2 class="text-2xl md:text-3xl font-bold text-pink-600 mb-6 text-center">Competências</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold text-pink-600 mb-3 flex items-center">
+            <i class="fas fa-balance-scale-right mr-3"></i> Método Vaganova
+          </h3>
+          <p class="text-gray-700">Ensino do balé clássico seguindo os princípios da renomada metodologia russa, adaptada para bailarinos masculinos.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold text-pink-600 mb-3 flex items-center">
+            <i class="fas fa-male mr-3"></i> Aulas para homens
+          </h3>
+          <p class="text-gray-700">Especialização em aulas voltadas para bailarinos iniciantes e intermediários do sexo masculino.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold text-pink-600 mb-3 flex items-center">
+            <i class="fas fa-pen-fancy mr-3"></i> Coreografias
+          </h3>
+          <p class="text-gray-700">Criação de coreografias originais que valorizam a técnica e expressão masculina no balé.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold text-pink-600 mb-3 flex items-center">
+            <i class="fas fa-bone mr-3"></i> Prevenção de lesões
+          </h3>
+          <p class="text-gray-700">Ensino de técnicas de biomecânica e cuidados para prevenir lesões comuns em bailarinos.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="aulas" class="my-8">
-      <h2 class="text-2xl font-bold text-pink-600 text-center mb-4">Aulas</h2>
+    <section id="aulas" class="my-8 md:my-12">
+      <h2 class="text-2xl md:text-3xl font-bold text-pink-600 mb-6 text-center">Aulas Disponíveis</h2>
       <div class="swiper-container">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper pb-10">
           <div class="swiper-slide">
-            <div class="card bg-white p-4 rounded-lg shadow-md w-64 text-center">
-              <h3 class="text-lg font-semibold">Balé para Homens 1</h3>
-              <p class="text-gray-600">Seg, Qua, Sex - 13:15 às 14:45</p>
-              <button onclick="inscrever('Balé para Homens 1')" class="mt-2 bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-800">Inscrever-se</button>
+            <div class="card bg-white p-6 rounded-lg shadow-md w-full max-w-xs text-center hover:shadow-lg transition-all">
+              <h3 class="text-xl font-semibold mb-2">Balé para Homens 1</h3>
+              <p class="text-gray-600 mb-4"><i class="far fa-calendar-alt mr-2"></i>Seg, Qua, Sex - 13:15 às 14:45</p>
+              <p class="text-gray-700 mb-4">Aula introdutória para homens, focada nos fundamentos do balé clássico.</p>
+              <button onclick="inscrever('Balé para Homens 1')" class="mt-2 bg-pink-600 text-white px-6 py-2 rounded-lg hover:bg-pink-800 transition-colors w-full">Inscrever-se</button>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="card bg-white p-4 rounded-lg shadow-md w-64 text-center">
-              <h3 class="text-lg font-semibold">Balé Iniciante</h3>
-              <p class="text-gray-600">Ter, Qui - 10:00 às 11:30</p>
-              <button onclick="inscrever('Balé Iniciante')" class="mt-2 bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-800">Inscrever-se</button>
+            <div class="card bg-white p-6 rounded-lg shadow-md w-full max-w-xs text-center hover:shadow-lg transition-all">
+              <h3 class="text-xl font-semibold mb-2">Balé Iniciante</h3>
+              <p class="text-gray-600 mb-4"><i class="far fa-calendar-alt mr-2"></i>Ter, Qui - 10:00 às 11:30</p>
+              <p class="text-gray-700 mb-4">Aula básica para iniciantes de todos os gêneros, com foco em postura e alinhamento.</p>
+              <button onclick="inscrever('Balé Iniciante')" class="mt-2 bg-pink-600 text-white px-6 py-2 rounded-lg hover:bg-pink-800 transition-colors w-full">Inscrever-se</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card bg-white p-6 rounded-lg shadow-md w-full max-w-xs text-center hover:shadow-lg transition-all">
+              <h3 class="text-xl font-semibold mb-2">Balé Avançado Masculino</h3>
+              <p class="text-gray-600 mb-4"><i class="far fa-calendar-alt mr-2"></i>Seg, Qua - 18:00 às 19:30</p>
+              <p class="text-gray-700 mb-4">Aula avançada focada em saltos, giros e técnica específica para bailarinos masculinos.</p>
+              <button onclick="inscrever('Balé Avançado Masculino')" class="mt-2 bg-pink-600 text-white px-6 py-2 rounded-lg hover:bg-pink-800 transition-colors w-full">Inscrever-se</button>
             </div>
           </div>
         </div>
@@ -68,40 +120,61 @@
       </div>
     </section>
 
-    <section id="agenda" class="my-8 text-center">
-      <h2 class="text-2xl font-bold text-pink-600 mb-4">Agenda</h2>
-      <div id="calendario" class="max-w-xs mx-auto">
-        <h3 id="mes" class="text-lg"></h3>
-        <div id="dias" class="grid grid-cols-7 gap-2"></div>
+    <section id="agenda" class="my-8 md:my-12 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-pink-600 mb-6">Agenda</h2>
+      <div class="bg-white p-6 rounded-lg shadow-md inline-block">
+        <div id="calendario" class="max-w-xs mx-auto">
+          <h3 id="mes" class="text-lg font-semibold mb-4"></h3>
+          <div class="grid grid-cols-7 gap-1 mb-2">
+            <div class="text-sm font-medium">Dom</div>
+            <div class="text-sm font-medium">Seg</div>
+            <div class="text-sm font-medium">Ter</div>
+            <div class="text-sm font-medium">Qua</div>
+            <div class="text-sm font-medium">Qui</div>
+            <div class="text-sm font-medium">Sex</div>
+            <div class="text-sm font-medium">Sáb</div>
+          </div>
+          <div id="dias" class="grid grid-cols-7 gap-1"></div>
+        </div>
       </div>
-      <div id="eventos" class="mt-4">
-        <h3 class="text-lg font-semibold">Eventos</h3>
-        <ul id="eventos-lista" class="list-none p-0"></ul>
+      <div id="eventos" class="mt-8 bg-white p-6 rounded-lg shadow-md max-w-md mx-auto">
+        <h3 class="text-xl font-semibold mb-4">Próximos Eventos</h3>
+        <ul id="eventos-lista" class="list-none p-0 space-y-3"></ul>
       </div>
     </section>
 
-    <section id="loja" class="my-8">
-      <h2 class="text-2xl font-bold text-pink-600 text-center mb-4">Loja</h2>
+    <section id="loja" class="my-8 md:my-12">
+      <h2 class="text-2xl md:text-3xl font-bold text-pink-600 mb-6 text-center">Loja Virtual</h2>
       <div class="swiper-container">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper pb-10">
           <div class="swiper-slide">
-            <div class="card bg-white p-4 rounded-lg shadow-md w-64 text-center relative">
+            <div class="card bg-white p-6 rounded-lg shadow-md w-full max-w-xs text-center hover:shadow-lg transition-all relative">
               <span class="sale-badge">Oferta!</span>
-              <img src="https://i.pinimg.com/736x/04/f7/40/04f740017d6b7dd257f359ce129a0729.jpg" alt="Sapatilha de balé" class="w-32 h-32 mx-auto rounded-lg mb-2">
-              <h3 class="text-lg font-semibold">Sapatilha de Balé</h3>
-              <p class="text-gray-600 line-through">R$ 150</p>
-              <p class="text-green-600 font-bold">R$ 120</p>
-              <button onclick="adicionarCarrinho('Sapatilha de Balé', 120)" class="mt-2 bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-800">Adicionar</button>
+              <img src="https://i.pinimg.com/736x/04/f7/40/04f740017d6b7dd257f359ce129a0729.jpg" alt="Sapatilha de balé" class="w-40 h-40 mx-auto rounded-lg mb-4 object-cover">
+              <h3 class="text-xl font-semibold mb-2">Sapatilha de Balé</h3>
+              <p class="text-gray-600 line-through">R$ 150,00</p>
+              <p class="text-green-600 font-bold text-xl mb-4">R$ 120,00</p>
+              <button onclick="adicionarCarrinho('Sapatilha de Balé', 120)" class="mt-2 bg-pink-600 text-white px-6 py-2 rounded-lg hover:bg-pink-800 transition-colors w-full">Adicionar</button>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="card bg-white p-4 rounded-lg shadow-md w-64 text-center relative">
+            <div class="card bg-white p-6 rounded-lg shadow-md w-full max-w-xs text-center hover:shadow-lg transition-all relative">
               <span class="sale-badge">Oferta!</span>
-              <img src="https://i.pinimg.com/736x/f3/1f/78/f31f783bb0c269b3b367b784be4c1474.jpg" alt="Collant de balé" class="w-32 h-32 mx-auto rounded-lg mb-2">
-              <h3 class="text-lg font-semibold">Collant de Balé</h3>
-              <p class="text-gray-600 line-through">R$ 120</p>
-              <p class="text-green-600 font-bold">R$ 99</p>
-              <button onclick="adicionarCarrinho('Collant de Balé', 99)" class="mt-2 bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-800">Adicionar</button>
+              <img src="https://i.pinimg.com/736x/f3/1f/78/f31f783bb0c269b3b367b784be4c1474.jpg" alt="Collant de balé" class="w-40 h-40 mx-auto rounded-lg mb-4 object-cover">
+              <h3 class="text-xl font-semibold mb-2">Collant de Balé</h3>
+              <p class="text-gray-600 line-through">R$ 120,00</p>
+              <p class="text-green-600 font-bold text-xl mb-4">R$ 99,00</p>
+              <button onclick="adicionarCarrinho('Collant de Balé', 99)" class="mt-2 bg-pink-600 text-white px-6 py-2 rounded-lg hover:bg-pink-800 transition-colors w-full">Adicionar</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card bg-white p-6 rounded-lg shadow-md w-full max-w-xs text-center hover:shadow-lg transition-all relative">
+              <span class="new-badge">Novo!</span>
+              <img src="https://i.pinimg.com/736x/83/2b/77/832b77a4c903c9cb1b641f28704f83ab.jpg" alt="Meia para balé" class="w-40 h-40 mx-auto rounded-lg mb-4 object-cover">
+              <h3 class="text-xl font-semibold mb-2">Meia para Balé</h3>
+              <p class="text-gray-600">Disponível em 3 cores</p>
+              <p class="text-green-600 font-bold text-xl mb-4">R$ 45,00</p>
+              <button onclick="adicionarCarrinho('Meia para Balé', 45)" class="mt-2 bg-pink-600 text-white px-6 py-2 rounded-lg hover:bg-pink-800 transition-colors w-full">Adicionar</button>
             </div>
           </div>
         </div>
@@ -109,117 +182,50 @@
       </div>
     </section>
 
-    <div id="carrinho" class="my-8 text-center">
-      <h3 class="text-lg font-semibold">Carrinho</h3>
-      <ul id="carrinho-lista" class="list-none p-0"></ul>
-      <p id="total" class="font-bold">Total: R$ 0</p>
+    <div id="carrinho" class="my-8 md:my-12 text-center bg-white p-6 rounded-lg shadow-md max-w-md mx-auto">
+      <h3 class="text-xl font-semibold mb-4">Seu Carrinho</h3>
+      <ul id="carrinho-lista" class="list-none p-0 space-y-2 mb-4"></ul>
+      <p id="total" class="font-bold text-xl">Total: R$ 0,00</p>
+      <button onclick="finalizarCompra()" class="mt-4 bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-800 transition-colors">Finalizar Compra</button>
     </div>
 
-    <section id="contato" class="my-8 text-center">
-      <h2 class="text-2xl font-bold text-pink-600 mb-4">Contato</h2>
-      <input type="text" id="contato-nome" placeholder="Nome" class="w-full max-w-xs p-2 mb-2 border rounded-lg">
-      <input type="email" id="contato-email" placeholder="Email" class="w-full max-w-xs p-2 mb-2 border rounded-lg">
-      <textarea id="contato-mensagem" placeholder="Mensagem" class="w-full max-w-xs p-2 mb-2 border rounded-lg h-24"></textarea>
-      <button onclick="enviarContato()" class="bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-800">Enviar</button>
-      <p id="resposta" class="mt-2"></p>
-      <div class="flex justify-center mt-4">
-        <a href="https://www.instagram.com/pvinip60" target="_blank" class="mx-2">
-          <img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram" class="bg-pink-600 p-1 rounded-full">
-        </a>
-        <a href="https://facebook.com/pvinip60" target="_blank" class="mx-2">
-          <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png" alt="Facebook" class="bg-pink-600 p-1 rounded-full">
-        </a>
+    <section id="contato" class="my-8 md:my-12 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-pink-600 mb-6">Contato</h2>
+      <div class="bg-white p-6 rounded-lg shadow-md max-w-md mx-auto">
+        <input type="text" id="contato-nome" placeholder="Seu nome" class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+        <input type="email" id="contato-email" placeholder="Seu email" class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+        <textarea id="contato-mensagem" placeholder="Sua mensagem" class="w-full p-3 mb-4 border border-gray-300 rounded-lg h-32 focus:ring-2 focus:ring-pink-500 focus:border-transparent"></textarea>
+        <button onclick="enviarContato()" class="bg-pink-600 text-white px-8 py-3 rounded-lg hover:bg-pink-800 transition-colors w-full">Enviar Mensagem</button>
+        <p id="resposta" class="mt-4"></p>
+        <div class="flex justify-center space-x-6 mt-6">
+          <a href="https://www.instagram.com/pvinip60" target="_blank" class="text-pink-600 hover:text-pink-800 text-2xl">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://facebook.com/pvinip60" target="_blank" class="text-pink-600 hover:text-pink-800 text-2xl">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://wa.me/5511999999999" target="_blank" class="text-pink-600 hover:text-pink-800 text-2xl">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
       </div>
     </section>
 
     <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-float" title="Fale conosco pelo WhatsApp">
-      <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp">
+      <i class="fab fa-whatsapp text-white text-2xl"></i>
     </a>
   </main>
 
-  <footer class="bg-pink-600 text-white text-center p-4">
-    <p>© 2025 Paulo Vinicius</p>
+  <footer class="bg-pink-600 text-white text-center p-6">
+    <div class="max-w-4xl mx-auto">
+      <p class="mb-2">© 2025 Paulo Vinicius Pinheiro Pedro - Todos os direitos reservados</p>
+      <p class="text-sm">Professor de Balé Clássico - Especializado em Bailarinos Masculinos</p>
+    </div>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
   <script src="main.js"></script>
-  <script>
-    // Three.js Header Animation
-    document.addEventListener('DOMContentLoaded', function() {
-      const header = document.getElementById('three-header');
-      const scene = new THREE.Scene();
-      const camera = new THREE.PerspectiveCamera(75, window.innerWidth / 200, 0.1, 1000);
-      const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-      renderer.setSize(window.innerWidth, 200);
-      renderer.setPixelRatio(window.devicePixelRatio);
-      header.appendChild(renderer.domElement);
-
-      scene.add(new THREE.AmbientLight(0xffffff, 0.5));
-      const particleCount = 100;
-      const particlesGeometry = new THREE.BufferGeometry();
-      const positions = new Float32Array(particleCount * 3);
-      const velocities = new Float32Array(particleCount * 3);
-
-      for (let i = 0; i < particleCount * 3; i += 3) {
-        positions[i] = (Math.random() - 0.5) * 40;
-        positions[i + 1] = (Math.random() - 0.5) * 40;
-        positions[i + 2] = (Math.random() - 0.5) * 40;
-        velocities[i] = (Math.random() - 0.5) * 0.015;
-        velocities[i + 1] = (Math.random() - 0.5) * 0.015;
-        velocities[i + 2] = (Math.random() - 0.5) * 0.015;
-      }
-
-      particlesGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-      const particleMaterial = new THREE.PointsMaterial({
-        color: 0xffffff,
-        size: 0.4,
-        transparent: true,
-        opacity: 0.7,
-        blending: THREE.AdditiveBlending
-      });
-
-      const particles = new THREE.Points(particlesGeometry, particleMaterial);
-      scene.add(particles);
-      camera.position.z = 15;
-
-      function animate() {
-        requestAnimationFrame(animate);
-        const positions = particlesGeometry.attributes.position.array;
-        for (let i = 0; i < particleCount * 3; i += 3) {
-          positions[i] += velocities[i];
-          positions[i + 1] += velocities[i + 1];
-          positions[i + 2] += velocities[i + 2];
-          if (Math.abs(positions[i]) > 20) velocities[i] *= -1;
-          if (Math.abs(positions[i + 1]) > 20) velocities[i + 1] *= -1;
-          if (Math.abs(positions[i + 2]) > 20) velocities[i + 2] *= -1;
-        }
-        particlesGeometry.attributes.position.needsUpdate = true;
-        renderer.render(scene, camera);
-      }
-      animate();
-
-      window.addEventListener('resize', function() {
-        const height = window.innerWidth <= 768 ? 150 : 200;
-        renderer.setSize(window.innerWidth, height);
-        camera.aspect = window.innerWidth / height;
-        camera.updateProjectionMatrix();
-      });
-
-      // Swiper.js for Carousels
-      const swipers = document.querySelectorAll('.swiper-container');
-      swipers.forEach(swiper => {
-        new Swiper(swiper, {
-          slidesPerView: 1,
-          spaceBetween: 10,
-          pagination: { el: '.swiper-pagination', clickable: true },
-          breakpoints: {
-            640: { slidesPerView: 2, spaceBetween: 20 },
-            1024: { slidesPerView: 3, spaceBetween: 30 }
-          }
-        });
-      });
-    });
-  </script>
 </body>
 </html>
