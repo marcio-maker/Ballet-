@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Paulo Vinicius, professor de balé clássico para homens. Aulas, agenda e acessórios.">
+  <meta name="keywords" content="balé clássico, professor de balé, balé para homens, São Paulo">
+  <meta name="author" content="Paulo Vinicius Pinheiro Pedro">
+  <title>Paulo Vinicius - Balé Clássico</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+  <header id="three-header" class="h-48 bg-gradient-to-b from-pink-300 to-white">
+    <h1 class="text-3xl font-bold text-pink-600 text-center">Paulo Vinicius - Balé Clássico</h1>
+  </header>
+
+  <nav class="sticky top-0 bg-white shadow-md p-4 z-50">
+    <div class="flex justify-around flex-wrap text-pink-600 font-bold">
+      <a href="#sobre" class="mx-2 my-1 hover:text-pink-800">Sobre</a>
+      <a href="#competencias" class="mx-2 my-1 hover:text-pink-800">Competências</a>
+      <a href="#aulas" class="mx-2 my-1 hover:text-pink-800">Aulas</a>
+      <a href="#agenda" class="mx-2 my-1 hover:text-pink-800">Agenda</a>
+      <a href="#loja" class="mx-2 my-1 hover:text-pink-800">Loja</a>
+      <a href="#contato" class="mx-2 my-1 hover:text-pink-800">Contato</a>
+    </div>
+  </nav>
+
+  <main class="max-w-4xl mx-auto p-4">
+    <section id="sobre" class="text-center my-8">
+      <h2 class="text-2xl font-bold text-pink-600 mb-4">Sobre</h2>
+      <img src="https://irisativalinapenteado.com/wp-content/uploads/2017/06/Mestre-Paulo-Vinicius.png" alt="Paulo Vinicius" class="w-48 h-48 mx-auto rounded-lg mb-4">
+      <p class="text-gray-700">Paulo Vinicius é um professor de balé clássico com 10 anos de experiência, especializado em aulas para homens. Formado pela Escola de Dança Maria Olenewa, promove técnica e inclusão.</p>
+    </section>
+
+    <section id="competencias" class="text-center my-8">
+      <h2 class="text-2xl font-bold text-pink-600 mb-4">Competências</h2>
+      <ul class="list-none p-0">
+        <li class="my-2">Ensino de balé (método Vaganova)</li>
+        <li class="my-2">Aulas para homens iniciantes</li>
+        <li class="my-2">Coreografias originais</li>
+        <li class="my-2">Biomecânica e prevenção de lesões</li>
+      </ul>
+    </section>
+
+    <section id="aulas" class="my-8">
+      <h2 class="text-2xl font-bold text-pink-600 text-center mb-4">Aulas</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card bg-white p-4 rounded-lg shadow-md w-64 text-center">
+              <h3 class="text-lg font-semibold">Balé para Homens 1</h3>
+              <p class="text-gray-600">Seg, Qua, Sex - 13:15 às 14:45</p>
+              <button onclick="inscrever('Balé para Homens 1')" class="mt-2 bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-800">Inscrever-se</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card bg-white p-4 rounded-lg shadow-md w-64 text-center">
+              <h3 class="text-lg font-semibold">Balé Iniciante</h3>
+              <p class="text-gray-600">Ter, Qui - 10:00 às 11:30</p>
+              <button onclick="inscrever('Balé Iniciante')" class="mt-2 bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-800">Inscrever-se</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section id="agenda" class="my-8 text-center">
+      <h2 class="text-2xl font-bold text-pink-600 mb-4">Agenda</h2>
+      <div id="calendario" class="max-w-xs mx-auto">
+        <h3 id="mes" class="text-lg"></h3>
+        <div id="dias" class="grid grid-cols-7 gap-2"></div>
+      </div>
+      <div id="eventos" class="mt-4">
+        <h3 class="text-lg font-semibold">Eventos</h3>
+        <ul id="eventos-lista" class="list-none p-0"></ul>
+      </div>
+    </section>
+
+    <section id="loja" class="my-8">
+      <h2 class="text-2xl font-bold text-pink-600 text-center mb-4">Loja</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card bg-white p-4 rounded-lg shadow-md w-64 text-center relative">
+              <span class="sale-badge">Oferta!</span>
+              <img src="https://i.pinimg.com/736x/04/f7/40/04f740017d6b7dd257f359ce129a0729.jpg" alt="Sapatilha de balé" class="w-32 h-32 mx-auto rounded-lg mb-2">
+              <h3 class="text-lg font-semibold">Sapatilha de Balé</h3>
+              <p class="text-gray-600 line-through">R$ 150</p>
+              <p class="text-green-600 font-bold">R$ 120</p>
+              <button onclick="adicionarCarrinho('Sapatilha de Balé', 120)" class="mt-2 bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-800">Adicionar</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card bg-white p-4 rounded-lg shadow-md w-64 text-center relative">
+              <span class="sale-badge">Oferta!</span>
+              <img src="https://i.pinimg.com/736x/f3/1f/78/f31f783bb0c269b3b367b784be4c1474.jpg" alt="Collant de balé" class="w-32 h-32 mx-auto rounded-lg mb-2">
+              <h3 class="text-lg font-semibold">Collant de Balé</h3>
+              <p class="text-gray-600 line-through">R$ 120</p>
+              <p class="text-green-600 font-bold">R$ 99</p>
+              <button onclick="adicionarCarrinho('Collant de Balé', 99)" class="mt-2 bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-800">Adicionar</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <div id="carrinho" class="my-8 text-center">
+      <h3 class="text-lg font-semibold">Carrinho</h3>
+      <ul id="carrinho-lista" class="list-none p-0"></ul>
+      <p id="total" class="font-bold">Total: R$ 0</p>
+    </div>
+
+    <section id="contato" class="my-8 text-center">
+      <h2 class="text-2xl font-bold text-pink-600 mb-4">Contato</h2>
+      <input type="text" id="contato-nome" placeholder="Nome" class="w-full max-w-xs p-2 mb-2 border rounded-lg">
+      <input type="email" id="contato-email" placeholder="Email" class="w-full max-w-xs p-2 mb-2 border rounded-lg">
+      <textarea id="contato-mensagem" placeholder="Mensagem" class="w-full max-w-xs p-2 mb-2 border rounded-lg h-24"></textarea>
+      <button onclick="enviarContato()" class="bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-800">Enviar</button>
+      <p id="resposta" class="mt-2"></p>
+      <div class="flex justify-center mt-4">
+        <a href="https://www.instagram.com/pvinip60" target="_blank" class="mx-2">
+          <img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram" class="bg-pink-600 p-1 rounded-full">
+        </a>
+        <a href="https://facebook.com/pvinip60" target="_blank" class="mx-2">
+          <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png" alt="Facebook" class="bg-pink-600 p-1 rounded-full">
+        </a>
+      </div>
+    </section>
+
+    <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-float" title="Fale conosco pelo WhatsApp">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp">
+    </a>
+  </main>
+
+  <footer class="bg-pink-600 text-white text-center p-4">
+    <p>© 2025 Paulo Vinicius</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+    // Three.js Header Animation
+    document.addEventListener('DOMContentLoaded', function() {
+      const header = document.getElementById('three-header');
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(75, window.innerWidth / 200, 0.1, 1000);
+      const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+      renderer.setSize(window.innerWidth, 200);
+      renderer.setPixelRatio(window.devicePixelRatio);
+      header.appendChild(renderer.domElement);
+
+      scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+      const particleCount = 100;
+      const particlesGeometry = new THREE.BufferGeometry();
+      const positions = new Float32Array(particleCount * 3);
+      const velocities = new Float32Array(particleCount * 3);
+
+      for (let i = 0; i < particleCount * 3; i += 3) {
+        positions[i] = (Math.random() - 0.5) * 40;
+        positions[i + 1] = (Math.random() - 0.5) * 40;
+        positions[i + 2] = (Math.random() - 0.5) * 40;
+        velocities[i] = (Math.random() - 0.5) * 0.015;
+        velocities[i + 1] = (Math.random() - 0.5) * 0.015;
+        velocities[i + 2] = (Math.random() - 0.5) * 0.015;
+      }
+
+      particlesGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+      const particleMaterial = new THREE.PointsMaterial({
+        color: 0xffffff,
+        size: 0.4,
+        transparent: true,
+        opacity: 0.7,
+        blending: THREE.AdditiveBlending
+      });
+
+      const particles = new THREE.Points(particlesGeometry, particleMaterial);
+      scene.add(particles);
+      camera.position.z = 15;
+
+      function animate() {
+        requestAnimationFrame(animate);
+        const positions = particlesGeometry.attributes.position.array;
+        for (let i = 0; i < particleCount * 3; i += 3) {
+          positions[i] += velocities[i];
+          positions[i + 1] += velocities[i + 1];
+          positions[i + 2] += velocities[i + 2];
+          if (Math.abs(positions[i]) > 20) velocities[i] *= -1;
+          if (Math.abs(positions[i + 1]) > 20) velocities[i + 1] *= -1;
+          if (Math.abs(positions[i + 2]) > 20) velocities[i + 2] *= -1;
+        }
+        particlesGeometry.attributes.position.needsUpdate = true;
+        renderer.render(scene, camera);
+      }
+      animate();
+
+      window.addEventListener('resize', function() {
+        const height = window.innerWidth <= 768 ? 150 : 200;
+        renderer.setSize(window.innerWidth, height);
+        camera.aspect = window.innerWidth / height;
+        camera.updateProjectionMatrix();
+      });
+
+      // Swiper.js for Carousels
+      const swipers = document.querySelectorAll('.swiper-container');
+      swipers.forEach(swiper => {
+        new Swiper(swiper, {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          pagination: { el: '.swiper-pagination', clickable: true },
+          breakpoints: {
+            640: { slidesPerView: 2, spaceBetween: 20 },
+            1024: { slidesPerView: 3, spaceBetween: 30 }
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
