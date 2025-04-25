@@ -1,0 +1,176 @@
+/* Fontes base */
+body {
+  font-family: 'Playfair Display', serif, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* Estilos do calendário */
+#dias div.font-bold {
+  position: relative;
+}
+
+#dias div.font-bold span {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  background-color: #f43f5e;
+  border-radius: 50%;
+}
+
+/* Estiliza a paginação do Swiper dentro da seção de aulas */
+.swiper-aulas .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: #ddd;
+  opacity: 1;
+}
+
+.swiper-aulas .swiper-pagination-bullet-active {
+  background-color: #f43f5e;
+}
+
+/* Estiliza a paginação do Swiper dentro da seção da loja */
+.swiper-loja .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #aaa;
+  opacity: 0.8;
+}
+
+.swiper-loja .swiper-pagination-bullet-active {
+  background-color: #10b981;
+}
+
+/* Header com efeito */
+#three-header {
+  position: relative;
+  overflow: hidden;
+}
+
+#three-header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.8);
+}
+/* Slides */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  touch-action: pan-y; /* Permite o movimento horizontal ao passar o dedo */
+  scroll-snap-align: center; /* Alinha os slides ao centro ao parar */
+}
+/* Cards */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #f3f3f3;
+  animation: move-right 2s linear infinite;
+}
+
+.card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes move-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+/* Badges */
+.sale-badge,
+.new-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #f43f5e;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  animation: pulse 2s infinite;
+}
+
+.new-badge {
+  background: #10b981;
+}
+
+/* Botão padrão */
+button,
+.button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover,
+.button:hover {
+  transform: translateY(-2px);
+}
+
+/* WhatsApp flutuante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Animação sutil */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  #calendario {
+    max-width: 100%;
+  }
+
+  #dias div {
+    font-size: 0.8rem;
+    height: 2rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .swiper-slide {
+    padding: 5px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
